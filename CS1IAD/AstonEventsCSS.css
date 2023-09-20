@@ -1,0 +1,107 @@
+body {
+}
+#logo {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#title {
+  font-weight: bolder;
+  font-family: Helvetica;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+#subtitle {
+  text-align: center;
+}
+
+#EventDescription {
+  text-align: center;
+  height: 230px;
+  background-image: linear-gradient(to right, #1a0033, #7a1f5c);
+  color: white;
+}
+
+
+#events {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: Arial;
+}
+
+.type {
+  float: left;
+  width: 33%;
+}
+
+.sco {
+  font-weight: bold;
+}
+
+.fom {
+  text-align: center;
+  font-size: 30px;
+}
+
+#allTypes {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.toForm {
+  border: 2px solid #1a0033;
+  color: black;
+  padding: 10px 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  background-color: white;
+}
+
+.toForm:hover {
+  background-color: #1a0033;
+  color: white;
+}
+
+#eventphoto {
+  float: left;
+  width: 33%;
+  margin-left: 10px;
+}
+
+.eventdescription2 {
+  text-align: center;
+}
+
+.column {
+  float:left;
+  width: 33%;
+  text-align: center;
+}
+
+.eventdetails2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.like {
+  margin-top:45px;
+}
+
+.form {
+  margin: 10px;
+}

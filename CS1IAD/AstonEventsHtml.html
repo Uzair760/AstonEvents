@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<title>Aston Events</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="AstonEventsCSS.css">
+</head>
+<body>
+
+<div class="row">
+  <div class="col-md-4">
+<img src="astonlogo.png" width="200" id="logo">
+</div>
+<div class="col-md-4">
+<h1 id="title">ASTON EVENTS</h1>
+</div>
+</div>
+<h3 id="subtitle">Sign up to events within Aston University</h3>
+
+<section id = "EventDescription">
+  <p id="events">Events</p>
+  <p class="type sco">Sports</p>
+  <p class="type sco">Culture</p>
+  <p class="type sco">Other</p>
+  <p class="type">Into playing sports? Or just looking to get fit? We have many sports events here at Aston.</p>
+  <p class="type">Interested in the finer things, such as arts and history? We'll have a group of people that enjoy similar things.</p>
+  <p class="type">Have some other hobbies? We have something for everyone.</p>
+<div>
+  <p class="fom">Find out more below!</p>
+</div>
+</section>
+
+<div class="dropdown">
+  <h5>Choose the relevant event from the dropdown menu:</h5>
+  <select name="allTypes" id="allTypes" style="margin-left: 10px" onchange="showDesc()">
+    <option value="" disabled selected>Please select</option>
+    <optgroup label="Sports">
+    <option value="Football">Football</option>
+    <option value="Cricket">Cricket</option>
+    <option value="Rugby">Rugby</option>
+    </optgroup>
+    <optgroup label="Culture">
+      <option value="Arts">Arts</option>
+      <option value="History">History</option>
+      <option value="Theatre">Theatre</option>
+    </optgroup>
+    <optgroup label="Other">
+      <option value="Podcast">Podcast</option>
+      <option value="Radio">Radio</option>
+      <option value="Live Music">Live Music</option>
+    </optgroup>
+  </select>
+  <p id="demo1" style="margin-top:10px"></p>
+<div id="footballPictures" style="display:none">
+  <img src="Soccer-Boot.jpg" height="170">
+  <img src="amateur-football-concept-with-match-scene_23-2147833392.jpg" height="170">
+  <img src="amateur-football-concept_23-2147833440.jpg" height="170">
+  <img src="22071166666_4c7d2c9af9_b.jpg" height="170">
+  <br>
+  <button class="toForm" onclick="document.location='footballEventForm.html'">Interested? Click Here!</button>
+</div>
+<div id="cricketPictures" style="display:none">
+  <img src="5398821_bc65b8f3.jpg" height="170">
+  <img src="9005946796_5079573fdd_b.jpg" height="170">
+  <img src="Cricket_general.jpg" height="170">
+  <img src="Cricketer_bowled.jpg" height="170">
+  <br>
+  <button class="toForm" onclick="document.location='cricketEventForm.html'">Interested? Click Here!</button>
+</div>
+<div id="rugbyPictures" style="display:none">
+  <img src="rugby1.jpg" height="170">
+  <img src="rugby2.jpg" height="170">
+  <img src="rugby3.jpg" height="170">
+  <img src="rugby4.jpg" height="170">
+  <br>
+  <button class="toForm" onclick="document.location='rugbyEventForm.html'">Interested? Click Here!</button>
+</div>
+<div id="artsPictures" style="display:none">
+  <img src="ba-exb-937-0001-dsp.jpg" height="170">
+  <img src="Art-Energy-Unveiling-Low-Res-41.jpg" height="170">
+  <img src="201001162409-philip-guston-riding-around-restricted.jpg" height="170">
+  <img src="ba-exb-937-0001-dsp.jpg" height="170">
+  <br>
+  <button class="toForm" onclick="document.location='artsEventForm.html'">Interested? Click Here!</button>
+</div>
+<div id="historyPictures" style="display:none">
+  <img src="history1.jpg" height="170">
+  <img src="history2.jpg" height="170">
+  <img src="history3.jpg" height="170">
+  <img src="history4.jpg" height="170">
+  <br>
+  <button class="toForm" onclick="document.location='historyEventForm.html'">Interested? Click Here!</button>
+</div>
+<div id="theatrePictures" style="display:none">
+  <img src="theatre1.jpg" height="170">
+  <img src="theatre2.jpg" height="170">
+  <img src="theatre3.jpg" height="170">
+  <img src="theatre4.jpg" height="170">
+  <br>
+  <button class="toForm" onclick="document.location='theatreEventForm.html'">Interested? Click Here!</button>
+</div>
+<div id="podcastPictures" style="display:none">
+  <img src="MIT-Podcast-Site-01.jpg" height="170">
+  <img src="6116-07236583en_Masterfile.jpg" height="170">
+  <img src="152520_1346352.jpg" height="170">
+  <img src="YPjCPv5CZWEZmGkdcTzCAX.jpg" height="170">
+  <br>
+  <button class="toForm" onclick="document.location='podcastEventForm.html'">Interested? Click Here!</button>
+</div>
+<div id="radioPictures" style="display:none">
+  <img src="radio1.jpg" height="170">
+  <img src="radio2.jpg" height="170">
+  <img src="radio3.jpg" height="170">
+  <img src="radio4.jpg" height="170">
+  <br>
+  <button class="toForm" onclick="document.location='radioEventForm.html'">Interested? Click Here!</button>
+</div>
+<div id="musicPictures" style="display:none">
+  <img src="music1.jpg" height="170">
+  <img src="music2.jpg" height="170">
+  <img src="music3.jpg" height="170">
+  <img src="music4.jpg" height="170">
+  <br>
+  <button class="toForm" onclick="document.location='musicEventForm.html'">Interested? Click Here!</button>
+</div>
+</div>
+
+<script src="CS1IADjavascript.js">
+</script>
+
+</body>
+</html>

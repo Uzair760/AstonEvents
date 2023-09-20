@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<title>Aston Football Event</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="AstonEventsCSS.css">
+</head>
+<body>
+
+<div class="row">
+  <div class="col-md-4">
+<img src="astonlogo.png" width="200" id="logo">
+</div>
+<div class="col-md-4">
+<h1 id="title">ASTON EVENTS</h1>
+</div>
+</div>
+<h3 id="subtitle">Sign up to events within Aston University</h3>
+
+<section id="EventDescription" style="height:50px">
+  <p id="events">Sign up to the event below</p>
+</section>
+
+<a href="AstonEventsHtml.html" style="margin:10px">Back to home</a>
+<br>
+<h4 class="eventdescription2">Aston University Football Match</h4>
+<p class="eventdescription2">11-a-side Football matches for people of all abilities.
+  There will be 4 matches of 30 minute lengths, so everyone will get a chance to play.
+  If you are interested, please register below.</p>
+<div class="row">
+  <div class="column">
+  <img src="EWR6IOcWAAA_NvA.jpg" id="eventphoto" style="width:100%">
+  </div>
+  <div class="column">
+  <p class="eventdetails2">Date and Time:</p>
+  <p>10:00 BST, 15/05/2021</p>
+  <p class="eventdetails2">Organiser:</p>
+  <p>John Appleseed</p>
+  <p style="font-weight:bold">(0121 204 3456, j.appleseed@aston.ac.uk)</p>
+  </div>
+  <div class="column">
+  <p class="eventdetails2">Venue:</p>
+  <p>Aston University Recreation Centre</p>
+  <input type="button" class="toForm like" id="like" value="Like" onclick="liked()"></input>
+  </div>
+</div>
+
+<form class="form" action="SignUpFormPHP.php" method="post">
+  <div class="row">
+  <div class="col-md-3">
+  <label for="first">First name(s):</label>
+  <br>
+  <input type="text" id="first" name="Firstname" required>
+  <br>
+  <label for="sur">Surname:</label>
+  <br>
+  <input type="text" id="sur" name="Surname" required>
+  <br>
+  </div>
+  <br>
+  <div class="col-md-3">
+  <label for="sId">Student ID number:</label>
+  <br>
+  <input type="number" id="sId" name="StudentID" required>
+  <br>
+  <label for="email">Email address:</label>
+  <br>
+  <input type="email" id="email" name="Email" pattern=".+@aston.ac.uk" oninvalid="setCustomValidity('Please enter an Aston University email address')" oninput="setCustomValidity('')" required>
+  </div>
+  <br>
+  <div class="col-md-3">
+  <select name="RegisteredEvent" style="margin-top:25px">
+    <option>Football Event</option>
+  </select>
+  <div style="margin-top:8px">
+  <label for="phone">Phone number:</label>
+  <br>
+  <input type="tel" id="phone" name="Phonenumber" required>
+  </div>
+  </div>
+  </div>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+
+
+
+<script src="CS1IADjavascript.js">
+</script>
+
+</body>
+</html>
